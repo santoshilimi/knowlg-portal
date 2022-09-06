@@ -9,7 +9,6 @@ import { PlayerslistComponent } from './playerslist/playerslist.component';
 import { ContentlistComponent } from './contentlist/contentlist.component';
 import { SharedcomponentsModule } from 'sharedcomponents';
 import { ContentService } from './services/content.service';
-
 @NgModule({
   imports: [
     CommonModule,

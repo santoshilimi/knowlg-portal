@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'pdfplayer/:playerType/:id',
     loadChildren: () => import('./pdfplayer/pdfplayer.module').then( m => m.PdfplayerPageModule)
+  },
+  {
+    path: 'epubplayer/:playerType/:id',
+    loadChildren: () => import('./epubplayer/epubplayer.module').then( m => m.EpubplayerPageModule)
   }
 ];
 

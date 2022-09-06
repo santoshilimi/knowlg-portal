@@ -21,7 +21,7 @@ export class ContentlistComponent implements OnInit {
     if (this.playerType === 'pdf') {
       this.router.navigate(['/pdfplayer/' , this.playerType, identifier] );
     } else if (this.playerType === 'epub') {
-      this.router.navigate(['/epubplayer/' , identifier, this.playerType] );
+      this.router.navigate(['/epubplayer/' , this.playerType, identifier] );
     }
   }
 }

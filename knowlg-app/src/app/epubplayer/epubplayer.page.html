@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+    <ion-title>{{playerConfig?.metadata?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <lib-epubplayer [playerConfig]= "playerConfig" (epubPlayerEvent)="epubPlayerEvent($event)"> </lib-epubplayer>
+</ion-content>
