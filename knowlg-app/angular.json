@@ -20,15 +20,11 @@
             "tsConfig": "tsconfig.app.json",
             "preserveSymlinks": true,
             "assets": [
+              "src/assets/sunbird/styles.css",
               {
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
-              },
-              {
-                "glob": "**/*.*",
-                "input": "node_modules/@project-sunbird/sunbird-pdf-player-v9/lib/assets/",
-                "output": "/assets/"
               },
               {
                 "glob": "**/*.svg",
@@ -50,6 +46,7 @@
               "./node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.css"
             ],
             "scripts": [
+              "src/assets/sunbird/sunbird-pdf-player.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/video.js/dist/video.js",
               "node_modules/@project-sunbird/sunbird-video-player-v9/lib/assets/videojs-markers.js",
