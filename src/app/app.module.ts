@@ -37,6 +37,7 @@ import { ContentDetailsModelComponent } from './players/collection-player/conten
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { HeaderComponent } from './players/header/header.component';
 import { PublishedPopupComponent } from './players/published-popup/published-popup.component';
+import { SharedPlayerComponent } from './players/shared-player/shared-player.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { PublishedPopupComponent } from './players/published-popup/published-pop
     CollectionDetailsModelComponent,
     ContentDetailsModelComponent,
     HeaderComponent,
-    PublishedPopupComponent
+    PublishedPopupComponent,
+    SharedPlayerComponent
   ],
   imports: [
     BrowserModule,

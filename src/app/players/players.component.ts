@@ -11,7 +11,7 @@ export class PlayersComponent {
   constructor(private router: Router){}
 
   navigateToPdf(){
-    this.router.navigate(['players/pdf']);
+    this.router.navigate(['players/pdf/1234']);
   }
 
   navigateToEpub(){

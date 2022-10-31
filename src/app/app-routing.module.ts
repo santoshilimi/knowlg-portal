@@ -13,6 +13,7 @@ import { ContentlistComponent } from './editors/contentlist/contentlist.componen
 import { InteractiveEditorComponent } from './editors/interactive-editor/interactive-editor.component';
 import { RoleComponent } from './editors/role/role.component';
 import { CollectionPlayerComponent } from './players/collection-player/collection-player.component';
+import { SharedPlayerComponent } from './players/shared-player/shared-player.component';
 
 const routes: Routes =  [
   {
@@ -41,6 +42,9 @@ const routes: Routes =  [
   },
   {
     path: 'players/pdf', component: PdfComponent,
+  },
+  {
+    path: 'players/:mimeType/:id', component: SharedPlayerComponent,
   },
   {
     path: 'players/epub', component: EpubComponent,
