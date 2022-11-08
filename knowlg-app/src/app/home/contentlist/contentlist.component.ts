@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router , ActivatedRoute} from '@angular/router';
 import { ContentService } from '../services/content.service';
 import  { get } from 'lodash-es'
@@ -20,7 +20,9 @@ export class ContentlistComponent implements OnInit {
     const defaultContents = this.contentService.getContenstList(this.mimeType);
     this.contentService.search(this.mimeType).subscribe((data: any) => {
       const contents = get(data, 'result.content');
+      console.log(contents, 'contents>>>>>>>>>');
       this.contentList = [...this.contentList, ...contents];
+      console.log(this.contentList, 'contentList>>>>>>>>>');
     },
     (err: any) => {
       console.log(err)
